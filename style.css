@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    background-color: #333;
+}
+header{
+    text-align: center;
+    background-color: orange;
+    font-size: 20px;
+    height: 50px;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+h2{
+    color: rgb(201, 197, 189);
+}
+
+img{
+    width: 250px;
+}
+
+.foto{
+    display: flex;
+    justify-content: center;
+    gap: 100px;    
+}
+
+.foto2{
+    display: flex;
+    justify-content: center;
+    gap: 100px;    
+    margin-top: 10px;
+}
+.foto5{
+    height: 300px;
+}
+
+.bagis{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.bagisEtBTN{
+    border-radius: 8px;
+    border: none;
+    background-color: orange;
+    height: 50px;
+    width: 100px;
+    font-size: 18px;
+    font-family:fantasy ;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.bagisEtBTN:hover{
+    transform: translateY(-4px);
+}
+
+#gizli{
+    display: none;
+}
+
+.kart {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+.kart-icerik {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px; 
+}
+
+.kart-icerik img.res4 {
+    margin-top: auto; 
+    width: 250px;
+}
+
+
+
+.geriDon{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.geriBtn{
+    border-radius: 8px;
+    border: none;
+    background-color: orange;
+    height: 50px;
+    width: 100px;
+    font-size: 18px;
+    font-family:fantasy ;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.geriBtn:hover{
+    transform: translateY(-4px);
+}
+
+@media (max-width:600px){
+    .foto{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        justify-content: center;
+    }
+    .foto2{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        justify-content: center;
+    }
+    img{
+        width: 185px;
+    }
+    h2{
+        font-size: 20px;
+        margin-left: 5px;
+    }
+}
+
