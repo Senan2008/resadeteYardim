@@ -129,3 +129,59 @@ img{
     }
 }
 
+.container {
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 9999;
+}
+
+
+.loader{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: 5px solid #fff;
+    border-radius: 100%;
+    animation: LoaderAnimation 1s linear infinite;
+    display:none;
+}
+
+.loader::before{
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    width: 15px;
+    height: 15px;
+    border: 3px solid #00aaff;
+    border-radius: 100%;
+    top: 5px;
+    left: 2.5px;
+}
+
+.loader::after{
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    width: 15px;
+    height: 15px;
+    border: 3px solid #ff3d00;
+    border-radius: 100%;
+    bottom: 5px;
+    right: 2.5px;
+}
+
+@keyframes LoaderAnimation{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
